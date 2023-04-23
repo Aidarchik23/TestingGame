@@ -312,8 +312,8 @@ GameObject:
   m_Component:
   - component: {fileID: 130247390}
   - component: {fileID: 130247393}
-  - component: {fileID: 130247391}
   - component: {fileID: 130247392}
+  - component: {fileID: 130247394}
   m_Layer: 5
   m_Name: GameStartController
   m_TagString: Untagged
@@ -343,18 +343,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -427.8545}
   m_SizeDelta: {x: 327.0613, y: 192.5452}
   m_Pivot: {x: 0.5, y: 0}
---- !u!114 &130247391
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 130247389}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 806a401e932a5d940a05348acfd04bbc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!222 &130247392
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -376,7 +364,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.78039217}
+  m_Color: {r: 0, g: 0, b: 1, a: 0.70980394}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 0
@@ -393,6 +381,18 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &130247394
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 130247389}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5f5d9451846743499ba3ac106a98a82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &200957466
 GameObject:
   m_ObjectHideFlags: 0
@@ -1385,7 +1385,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3c9e7b7b411c14438b0f5e1e935f815, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _spawnPoints:
+  spawnPoints:
   - {fileID: 1630785829}
   - {fileID: 1575956342}
   - {fileID: 1229875773}
@@ -1393,7 +1393,7 @@ MonoBehaviour:
   - {fileID: 1192197617}
   - {fileID: 1480167825}
   - {fileID: 119261571}
-  _coinPrefab: {fileID: 8596272581894005224, guid: aa18e61bba588ab49b8b0e4e95d2bd15, type: 3}
+  PointPrefab: {fileID: 8596272581894005224, guid: aa18e61bba588ab49b8b0e4e95d2bd15, type: 3}
 --- !u!4 &1208218496
 Transform:
   m_ObjectHideFlags: 0
@@ -1489,10 +1489,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38c52c102005ba54f864c4a5ac7f9707, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _timerTxt: {fileID: 910721046}
-  _coinsTxt: {fileID: 1308950299}
-  _gameOverTxt: {fileID: 1572070537}
-  _retryBtn: {fileID: 1596637605}
+  timerText: {fileID: 910721046}
+  pointText: {fileID: 1308950299}
+  gameOverText: {fileID: 1572070537}
+  retryButton: {fileID: 1596637605}
 --- !u!4 &1241972957
 Transform:
   m_ObjectHideFlags: 0
